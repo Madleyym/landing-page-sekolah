@@ -1,113 +1,224 @@
-import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
+import Carsoul from "@/app/componens/carsoul";
+import CarsoulFoto from "@/app/componens/carsoul-foto";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <>
+<Carsoul>
+
+</Carsoul>
+
+        {/*<CarsoulFoto>*/}
+
+        {/*</CarsoulFoto>*/}
+
+        <div className="flex flex-col items-center justify-center min-h-screen mt-16">
+          {/* Bagian Kepala Sekolah */}
+          <div className="text-center">
+            <h2 className="mb-4 text-2xl font-semibold text-black">
+              Kepala Sekolah
+            </h2>
+            <div className="flex flex-col items-center">
+              <img
+                  src="/avatar/Maman,S.pd.jpg"
+                  alt="Kepala Sekolah"
+                  className="w-48 h-48 rounded-full object-cover mb-2"
+              />
+              <p className="text-lg font-semibold text-black">
+                Maman, S.Pd
+              </p>
+            </div>
+          </div>
+
+          {/* Bagian Guru */}
+          <div className="text-center mt-16">
+            <h2 className="mb-2 text-2xl font-semibold text-black">
+              Guru
+            </h2>
+            <div className="py-4">
+              {/* Baris Atas - 5 Guru */}
+              <div className="flex flex-wrap justify-center gap-4 mb-4">
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Tuti Alawiyah.jpg"
+                      alt="Tuti Alawiyah"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Tuti Alawiyah, S.Pd</p>
+                  <p className="text-xs text-gray-600">Guru 1</p>
+                </div>
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Fitri Sarifatun Nisa, S.Pd.jpg"
+                      alt="Fitri Sarifatun Nisa"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Fitri Sarifatun Nisa, S.Pd</p>
+                  <p className="text-xs text-gray-600">Guru 2</p>
+                </div>
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Shelly Asmaryani, S.Pd.I.jpg"
+                      alt="Shelly Asmaryani"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Shelly Asmaryani, S.Pd.I</p>
+                  <p className="text-xs text-gray-600">Guru 3</p>
+                </div>
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Firmansyah Suwandi, S.Pd.jpg"
+                      alt="Firmansyah Suwandi"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Firmansyah Suwandi, S.Pd</p>
+                  <p className="text-xs text-gray-600">Guru 4</p>
+                </div>
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Ayu Wahyuni, S.Pd.jpg"
+                      alt="Ayu Wahyuni"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Ayu Wahyuni, S.Pd</p>
+                  <p className="text-xs text-gray-600">Guru 5</p>
+                </div>
+              </div>
+
+              {/* Baris Bawah - 3 Guru */}
+              <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Indra Triyana, S.Pd.I.jpg"
+                      alt="Indra Triyana"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Indra Triyana, S.Pd.I</p>
+                  <p className="text-xs text-gray-600">Guru 6</p>
+                </div>
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Yuyun Yundiroh, S.Pd.I.jpg"
+                      alt="Yuyun Yundiroh"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Yuyun Yundiroh, S.Pd.I</p>
+                  <p className="text-xs text-gray-600">Guru 7</p>
+                </div>
+                <div className="flex-none w-32 text-center">
+                  <img
+                      src="/avatar/Teguh Gumilar, S.Pd.jpg"
+                      alt="Teguh Gumilar"
+                      className="w-32 h-32 rounded-full object-cover mb-2"
+                  />
+                  <p className="text-sm font-semibold text-black">Teguh Gumilar, S.Pd</p>
+                  <p className="text-xs text-gray-600">Guru 8</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Struktur Organisasi Sekolah */}
+            <div id="profil-sekolah" className="text-center mt-16">
+              <h2 className="mb-3 text-2xl font-bold text-black">
+                Struktur Organisasi Sekolah
+              </h2>
+              {/* Tambahkan konten struktur organisasi di sini */}
+            </div>
+          </div>
+
+          <section id="informasi-sekolah" className="py-16" style={{backgroundColor: '#E8F5FC'}}>
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-black">Informasi Sekolah</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold mb-4 text-black text-center">Visi dan Misi</h3>
+                  <p className="text-black text-justify">Visi SD Negeri Margasari, Kecamatan Ciawi,
+                    Kabupaten Tasikmalaya di rumuskan sebagai berikut :
+                    “Terwujudnya generasi muda yang berkarakter, cerdas, dan berakhlak mulia melalui
+                    pendidikan yang berkualitas dan berkelanjutan.”</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold mb-4 text-black text-center">Sejarah Sekolah</h3>
+                  <p className="text-black text-justify">Setelah 4 tahun Indonesia merdeka pada tahun
+                    1945, pemerintah Indonesia mulai membangun sistem pendidikan nasional yang lebih
+                    inklusif dan menyeluruh. SD Negeri Margasari Kecamatan Ciawi Kabupaten Tasikmalaya
+                    adalah salah satu hasil dari program pemerintah untuk meningkatkan akses pendidikan
+                    dasar di daerah.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="visi-misi" className="py-16 bg-0-100">
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl font-bold text-center text-black mb-8">Visi & Misi</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold mb-4 text-center text-black">Visi</h3>
+                  <p className="text-black text-justify">“Terwujudnya generasi muda yang berkarakter,
+                    cerdas, dan berakhlak mulia melalui pendidikan yang berkualitas dan
+                    berkelanjutan.”</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold mb-4 text-center text-black">Misi</h3>
+                  <p className="text-black text-justify">1. Menyediakan pendidikan yang berkualitas dan
+                    berkarakter untuk siswa.</p>
+                  <p className="text-black text-justify">2. Meningkatkan keterampilan dan pengetahuan
+                    siswa melalui pembelajaran yang inovatif.</p>
+                  <p className="text-black text-justify">3. Mengembangkan nilai-nilai akhlak mulia dalam
+                    kehidupan sehari-hari siswa.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="kontak-kami" className="py-16">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-black">Kontak Kami</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold mb-4 text-black text-center">Kontak Kami</h3>
+                  <p className="text-black text-justify">Alamat: Jl. Raya Margasari No. 123, Kec. Ciawi,
+                    Kab. Tasikmalaya</p>
+                  <p className="text-black text-justify">Telepon: (0265) 123456</p>
+                  <p className="text-black text-justify">Email: sd.margasari@domain.com</p>
+                </div>
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold mb-4 text-black text-center">Ikuti Kami</h3>
+                  <div className="flex justify-center space-x-4 mb-4">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                       className="text-blue-600 hover:text-blue-800">
+                      <FontAwesomeIcon icon={faFacebook} size="2x"/>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                       className="text-pink-600 hover:text-pink-800">
+                      <FontAwesomeIcon icon={faInstagram} size="2x"/>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                       className="text-red-600 hover:text-red-800">
+                      <FontAwesomeIcon icon={faYoutube} size="2x"/>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"
+                       className="text-black hover:text-gray-800">
+                      <FontAwesomeIcon icon={faTiktok} size="2x"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-auto">
+                <p className="mb-6 text-center text-black">&copy; 2024 SD Negeri Margasari. Semua hak cipta
+                  dilindungi.</p>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </>
   );
 }
