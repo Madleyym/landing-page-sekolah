@@ -82,6 +82,7 @@ main, footer {
   .background-carousel.fade-out {
     opacity: 0;
   }
+
   /* Styles for video */
   .video-card {
     position: relative;
@@ -96,5 +97,4 @@ main, footer {
     height: 100%;
     object-fit: cover;
   }
-
 }
